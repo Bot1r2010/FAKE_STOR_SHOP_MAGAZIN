@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Fake Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center">   
+    <div class="nebula"></div>
+    <div class="stars" id="stars"></div>
+    <header class="navbar">
+      <h1>Cosmic Fake Store</h1>
+      <nav aria-label="Main navigation">
+        <a href="#home">Главная</a>
+        <a href="#products">Продукты</a>
+        <a href="#delivery">Доставка</a>
+      </nav>
+    </header>
+    <section class="hero" id="home">
+      <h2>Космический Магазин</h2>
+      <p>Откройте для себя лучшие товары с галактическим стилем!</p>
+      <button onclick="window.location.href='#products'">Начать покупки</button>
+    </section>
+    <main class="container" id="products">
+      <h1 class="loading">Загрузка...</h1>
+      <div class="product-grid" id="product-grid"></div>
+    </main>
+    <section class="delivery" id="delivery">
+      <h2>Доставка по всей галактике</h2>
+      <p>Мы доставляем ваши заказы быстро и надежно, куда бы вы ни находились!</p>
+      <div class="delivery-options">
+        <div class="delivery-card">
+          <h3>Стандартная доставка</h3>
+          <p>Доставка в течение 5-7 дней</p>
+          <p class="price">$5.00</p>
+          <button>Выбрать</button>
+        </div>
+        <div class="delivery-card">
+          <h3>Экспресс-доставка</h3>
+          <p>Доставка в течение 1-2 дней</p>
+          <p class="price">$15.00</p>
+          <button>Выбрать</button>
+        </div>
+        <div class="delivery-card">
+          <h3>Межзвездная доставка</h3>
+          <p>Мгновенная доставка дронами</p>
+          <p class="price">$50.00</p>
+          <button>Выбрать</button>
+        </div>
+      </div>
+    </section>
+  </div>     
+  <script src="main.js"></script>
+</body>
+</html>
